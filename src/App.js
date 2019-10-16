@@ -70,10 +70,20 @@ const App = ({ username }) => {
         <Container>
             {images &&
                 images.map(res => (
-                    <Panel key={res[1].src}>
-                        <Item src={res[1].src} alt="recent post" />
+                    <Panel key={res[3].src}>
+                        <Item src={res[3].src} alt="recent post" />
                     </Panel>
                 ))}
+            <div className="filter" />
+            <div className="intro">
+                <h1>BarberRiley.com</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip
+                </p>
+            </div>
         </Container>
     );
 };
